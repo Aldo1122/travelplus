@@ -1,0 +1,55 @@
+﻿body {
+}
+
+.cerca {
+    background-color: #1F60F6;
+    font-weight: bold;
+    margin-right:10px;
+}
+.ispira {
+    background-color: #0FF1E3;
+    font-weight: bold;
+    margin-left:10px;
+}
+
+.search {
+    width: 40%;
+    margin-right: 10px;
+    height:38px;
+}
+
+.info {
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.container-fluid {
+    background-color: dodgerblue;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 .title{
+    font-size:40px;
+}
+
+p{
+    margin-bottom:0;
+}
+
+.full-width-div {
+    width: 100%;
+    left: 0;
+    background-color: dodgerblue;
+}
+
+.footer {
+    margin-top: 10px;
+    bottom: unset;
+}
