@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/stile/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/stile/css/site.css" />
     <link rel="stylesheet" href="/stile/css/layout.css" />
+    <link rel="stylesheet" href="/stile/css/preventivo.css" />
     <link href="/stile/css/faq.css" rel="stylesheet"/>
     <link href="/stile/font/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet"/> <!--load all styles -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -247,39 +248,57 @@
     <h3 style="padding: 20px; font-size: 18px; font-weight: bold;">
         Non riesci a trovare una risposta alla tua domanda?
     </h3>
-    <a href="#"  class="Travel-secondary-button" style="padding: 10px 24px; font-size:25px;font-weight:bold;">
+    <a href="#exampleModal"  class="Travel-secondary-button"  data-toggle="modal" data-target="#exampleModal" style="padding: 10px 24px; font-size:25px;font-weight:bold;">
         Contattaci
     </a>
     <br/>
 </div>
 
-<script>
-    $(document).ready(function () {
-        // Add smooth scrolling to all links
-        $("a").on('click', function (event) {
+       <form id="form2" runat="server">
 
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Richiedi informazioni </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body row">
 
-                // Store hash
-                var hash = this.hash;
+           <div class="nome col-4 data">
+                        <label class="testo" for="messaggio">Nome:</label>
+                    </div>
+                    <div class="nome col-8 data">
+                        <asp:Textbox type="text" id="nome" name="nome" required style="width:90%;"  runat="server"/>
+                    </div>   
+                    
+                    <div class="email col-4 data">
+                        <label class="testo" for="messaggio">Email:</label>
+                    </div>
+                    <div class="email col-8 data">
+                        <asp:Textbox type="text" id="email" name="email" required style="width:90%;"  runat="server"/>
+                    </div>
 
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function () {
+          <div class="email col-4 data">
+                        <label class="testo" for="messaggio">Messaggio:</label>
+                    </div>
+           <div class="messaggio col-8 data">
+                        <asp:Textbox id="messaggio" name="messaggio" style="width:90%;"  runat="server" Columns="50" Rows="5" TextMode="MultiLine" ></asp:Textbox>
+                    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <asp:Button id="button" class="btn btn-primary" runat="server" OnClick="SendEmail" Text="Contattaci"/>
+      </div>
+    </div>
+  </div>
+</div>
 
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                });
-            } // End if
-        });
-    });
+           </form>
 
-</script>
+
 
     <footer class="border-top footer text-muted bg-dark text-center text-white">
         <div class="container p-4">
@@ -415,5 +434,34 @@
        <script src="/stile/lib/jquery/dist/jquery.min.js"></script>
     <script src="/stile/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/stile/js/site.js" asp-append-version="true"></script>
+    
+<script>
+    $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+
+</script>
+
 </body>
 </html>

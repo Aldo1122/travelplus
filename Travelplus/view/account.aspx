@@ -54,22 +54,24 @@
                    
                 </div>
                 <div class="card-body">
-                    <form>
+                    <form id="login" runat="server">
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-user"></i></span>
                             </div>
-                            <input type="text" class="form-control" placeholder="username">
+                         <label class="testo" for="messaggio">Username:</label>
+                        <asp:Textbox type="text" id="username" name="username" required style="width:90%;"  runat="server"/>
 
                         </div>
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-key"></i></span>
                             </div>
-                            <input type="password" class="form-control" placeholder="password">
+                        <label class="testo" for="messaggio">Password:</label>
+                        <asp:Textbox type="password" id="password" name="password" required style="width:90%;"  runat="server"/>                        
                         </div>
                         <div class="form-group">
-                            <input type="submit" value="Login" class="btn float-right login_btn">
+                    <asp:Button id="button" class="btn btn-primary" runat="server" OnClick="Enter" Text="Login"/>
                         </div>
                     </form>
                 </div>
