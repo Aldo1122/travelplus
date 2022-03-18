@@ -58,22 +58,10 @@ namespace Travelplus.view
                 smtp.Timeout = 20000;
 
                 smtp.Send(Msg);
-            }
-        }
 
+            Response.Redirect("grazie.aspx");
+
+        }
     }
 
-//DA VEDDERE DOMANI
-
-//mail.Body = "<h2>" + "Enquiry from " + " " + txtName.Text + "</h2>" + "<br><br>" +
-
-//        "Subject : " + txtSubject.Text + "<br>" +
-
-//        "Email  : " + txtEmail.Text.Trim() + "<br>" +
-
-//        "InQuiry : " + txtInquiry.Text.Trim() + "<br>" +
-
-//        "Education: " + Education.ToString() + "<br>" +
-
-//        "Thank You";
-
+    }

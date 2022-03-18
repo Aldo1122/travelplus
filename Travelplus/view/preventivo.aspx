@@ -49,6 +49,7 @@
    <form id="form1" runat="server">
 
  <div class="modal-dialog" role="document">
+       <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Richiedi preventivo</h5>
@@ -185,18 +186,15 @@
                     <div class="budget col-6 data">
                         <asp:Textbox type="text" id="budget" name="budget" style="width:90%;"  runat="server"/>
                     </div>
-
-                 
-
-                </div>
                 </div>
 
                 <div class="modal-footer">
-                    <asp:Button id="button" class="btn btn-primary" runat="server" OnClick="SendEmail" Text="Invia"/>
+                    <asp:Button id="button" class="btn btn-primary" runat="server" OnClick="SendEmail" Text="Contattaci"/>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
-        </div>
+                 </div>
+            </div>
     </form>
     <footer class="border-top footer text-muted bg-dark text-center text-white">
         <div class="container p-4">

@@ -84,6 +84,7 @@
     <Content Include="view\destinazioni.aspx" />
     <Content Include="view\dove_partire.aspx" />
     <Content Include="view\faq.aspx" />
+    <Content Include="view\grazie.aspx" />
     <Content Include="view\guida_ita.aspx" />
     <Content Include="view\Index.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -290,6 +291,13 @@
     </Compile>
     <Compile Include="view\faq.aspx.designer.cs">
       <DependentUpon>faq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\grazie.aspx.cs">
+      <DependentUpon>grazie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\grazie.aspx.designer.cs">
+      <DependentUpon>grazie.aspx</DependentUpon>
     </Compile>
     <Compile Include="view\guida_ita.aspx.cs">
       <DependentUpon>guida_ita.aspx</DependentUpon>

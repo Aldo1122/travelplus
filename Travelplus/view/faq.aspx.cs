@@ -39,6 +39,9 @@ namespace Travelplus.view
             smtp.Timeout = 20000;
 
             smtp.Send(Msg);
+
+            Response.Redirect("grazie.aspx");
+
         }
-        }
+    }
     }
