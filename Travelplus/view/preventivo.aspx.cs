@@ -60,7 +60,7 @@ namespace Travelplus.view
                 smtp.Send(Msg);
 
             Response.Redirect("grazie.aspx");
-
+             
         }
     }
 
