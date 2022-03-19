@@ -57,17 +57,17 @@
                     <form id="login" runat="server">
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                <span class="input-group-text"><i class="fas fa-user"></i> </span>
                             </div>
-                         <label class="testo" for="messaggio">Username:</label>
+                         <label class="testo" for="messaggio" style="color:yellow;font-weight:bold;"> &nbsp;Username:</label>
                         <asp:Textbox type="text" id="username" name="username" required style="width:90%;"  runat="server"/>
 
                         </div>
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                <span class="input-group-text"><i class="fas fa-key"></i> </span>
                             </div>
-                        <label class="testo" for="messaggio">Password:</label>
+                        <label class="testo" for="messaggio" style="color:yellow;font-weight:bold;"> &nbsp;Password:</label>
                         <asp:Textbox type="password" id="password" name="password" required style="width:90%;"  runat="server"/>                        
                         </div>
                         <div class="form-group">
