@@ -1,0 +1,45 @@
+﻿body {
+}
+
+.cat {
+    border: 2px solid #ddd;
+}
+
+img{
+    width: 48px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.lead {
+    padding-bottom: 20px;
+    color: blue;
+    font-size: 15px;
+    text-align: center;
+}
+
+.d-flex{
+    margin-top:15px;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+.footer {
+    margin-top: 10px;
+    bottom: unset;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    .cat {
+        margin-left: 30px;
+    }
+}
